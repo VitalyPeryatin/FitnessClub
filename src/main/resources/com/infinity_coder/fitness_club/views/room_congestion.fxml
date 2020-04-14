@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.infinity_coder.fitness_club.controller.RoomCongestionController">
+   <children>
+      <VBox layoutY="75.0" prefHeight="624.0" prefWidth="1000.0">
+         <children>
+            <TableView fx:id="tableView" prefHeight="649.0" prefWidth="1000.0">
+              <columns>
+                <TableColumn fx:id="dayOfWeekColumn" prefWidth="192.0" text="День недели" />
+                <TableColumn fx:id="timeColumn" prefWidth="119.0" text="Время" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Text fx:id="roomNumberTextView" layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room (1 of 3)">
+         <font>
+            <Font name="Hei Regular" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="prevRoomButton" layoutX="205.0" layoutY="24.0" mnemonicParsing="false" onAction="#loadPrevRoomCongestion" text="&lt;" />
+      <Button fx:id="nextRoomButton" layoutX="367.0" layoutY="24.0" mnemonicParsing="false" onAction="#loadNextRoomCongestion" text="&gt;" />
+      <Text fx:id="currentRoomTextView" layoutX="233.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PingPong" textAlignment="CENTER" wrappingWidth="134.17138671875">
+         <font>
+            <Font name="Hei Regular" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

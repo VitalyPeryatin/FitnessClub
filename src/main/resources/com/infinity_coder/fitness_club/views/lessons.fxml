@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.infinity_coder.fitness_club.controller.LessonsController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="1000.0">
+         <children>
+            <TableView fx:id="tableView" prefHeight="700.0" prefWidth="1000.0">
+              <columns>
+                <TableColumn fx:id="lessonsTypeColumn" prefWidth="94.0" text="Вид занятий" />
+                <TableColumn fx:id="roomColumn" prefWidth="56.0" text="Зал" />
+                  <TableColumn fx:id="fioTrainerColumn" prefWidth="162.0" text="ФИО тренера" />
+                  <TableColumn fx:id="trainerPhoneNumberColumn" prefWidth="114.0" text="Номер тренера" />
+                  <TableColumn fx:id="startTimeColumn" prefWidth="87.0" text="Начало" />
+                  <TableColumn fx:id="endTimeColumn" prefWidth="86.0" text="Конец" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
