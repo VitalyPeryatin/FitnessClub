@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 public class App extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("My First JavaFX App");
+        primaryStage.setTitle("Расписание клиентов фитнес-клуба");
 
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("com/infinity_coder/fitness_club/views/main.fxml"));
         Scene scene = new Scene(root, 600, 400);
@@ -21,6 +21,4 @@ public class App extends Application {
     public static void main(String[] args) {
         Application.launch(args);
     }
-
-    // TODO: Прописать в Readme.md что нужно добавить VM options
 }
